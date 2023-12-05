@@ -1,0 +1,160 @@
+/*General Resets*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+select,
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+button,
+legend {
+  font-family: "Staatliches", sans-serif;
+}
+
+body {
+  background-color: #efefef;
+  padding: 140px 0;
+}
+
+body::before {
+  content: "";
+  background-color: #535971;
+  height: 436px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  width: 750px;
+  margin: auto;
+}
+
+/*Header*/
+header h1 {
+  color: #ffffff;
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+header p {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 50px;
+  max-width: 417px;
+}
+
+/*Form*/
+#mentorship-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 20px 20px 0px 0px;
+  background-color: #fff;
+  padding: 64px;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+  color: #535971;
+  font-size: 24px;
+  line-height: 34px;
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 16px;
+  margin-bottom: 15px;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.col-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+}
+
+.col-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.col-3 .input-wrapper {
+  width: 144px;
+}
+
+.col-3 .input-wrapper:nth-child(1) {
+  width: 100%;
+  margin-right: 10px;
+}
+
+.input-wrapper label {
+  color: #4e4958;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.input-wrapper span {
+  color: #c1bccc;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.input-wrapper input {
+  border-radius: 8px;
+  border: 1px solid #e6e6f0;
+  background: #fafafc;
+  color: #898ea3;
+  height: 56px;
+  padding: 0 15px;
+}
+
+.fieldset-wrapper h2 {
+  color: #535971;
+  font-size: 20px;
+  line-height: 34px;
+  margin-bottom: 8px;
+}
+
+/*Footer*/
+
+footer {
+  border-radius: 0px 0px 20px 20px;
+  background: #535971;
+  padding: 50px 70px;
+}
+
+footer button {
+  display: block;
+  width: 100%;
+  padding: 15px 40px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 26px;
+  border-radius: 20px;
+  background: #ff5374;
+  border: none;
+  cursor: pointer;
+}
